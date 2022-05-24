@@ -1,0 +1,102 @@
+html {
+  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 360px;
+  min-width: 280px;
+  background-color: white;
+  background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: 520px;
+  display: flex;
+}
+
+.sidebar>div {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.514);
+  height: 15%;
+  line-height: 10%;
+  width: 100%;
+  text-align: center;
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar img {
+  object-fit: contain;
+  height: 100%;
+}
+
+/* */
+
+header, main, .submit {
+  padding: 24px;
+  padding-right: 120px;
+}
+
+header, .submit{
+  background-color: rgb(235, 235, 235);
+  font-weight: bold;
+}
+
+header {
+  padding-top: 120px;
+}
+
+main {
+  box-shadow: 0px 120px 5px 0px black;
+}
+
+main p {
+  font-weight: bold;  
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 48px;
+  margin: 24px 0px;
+}
+
+.form-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(0, 119, 255);
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.274);
+  transition: 0.1s;
+}
+
+
+input:invalid+span::after {
+  content: "Hey";
+}
+
+
+label {
+  font-size: 0.7rem;
+}
+
+.submit {
+  height: 100%;
+}

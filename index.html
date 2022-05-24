@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div>
+        <img class="logo" src="images/odin-lined.png" alt="site-logo">
+        <h1>SIGN UP </h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <header>
+        This is not a real service! You know you need something like this in your life
+        to help you realize your deepest dreams. Sign up now to get started.
+        <br>
+        <br>
+        You know you want to.
+      </header>
+      <main>
+        <p>Let's do this!</p>
+        <form action="" method="post" id="signup-form">
+          <div class="form-row">
+            <div class="form-cell">
+              <label for="first_name">FIRST NAME:</label>
+              <input id="first_name" name="first_name" required>
+            </div>
+            <div class="form-cell">
+              <label for="Last_name">LAST NAME:</label>
+              <input id="last_name" name="last_name" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-cell">
+              <label for="email">EMAIL:</label>
+              <input type="email" id="email" name="email" required>
+              <span></span>
+            </div>
+            <div class="form-cell">
+              <label for="phone_number">PHONE NUMBER:</label>
+              <input type="tel" id="phone_number" name="phone_number" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-cell">
+              <label for="password">PASSWORD:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-cell">
+              <label for="confirm_password">CONFIRM PASSWORD:</label>
+              <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+          </div>
+
+        </form>
+      </main>
+      <div class="submit">
+        <button class="btn btn-primary" form="signup-form" value="Submit" type="submit">Create Account</button>
+        <p>Already have an account? <a href="https://google.com">Log in</a></p>
+      </div>
+    </div>
+
+  </body>
+</html>
